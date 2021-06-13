@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <div class="main-body">
+        <div class="nav-pane">
+            <ul>
+                <li class="page-item"><a href="#">Home</a>&gt;</li>
+                <li class="page-item"><a href="#">Boys</a>&gt;</li>
+                <li class="page-item"><a href="#">Clothing</a>&gt;</li>
+                <li class="page-item"><a href="#">SweatShirts & Sweaters</a>&gt;</li>
+            </ul>
+        </div>
+        <div class="product-body">
+            <div class="images-holder">
+                <ul>
+                    <li id="initial" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic1"><img src="Images/1.jpg" alt=""></a></li>
+                    <li id="second" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic2"><img src="Images/2.jpg" alt=""></a></li>
+                    <li id="third" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic3"><img src="Images/3.jpg" alt=""></a></li>
+                    <li id="fourth"class="img-icons" onclick="navigateToPicture(this)"><a href="#pic4"><img src="Images/4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="product-img">
+                <img src="Images/1.jpg" alt="">
+                 <div class="slider-one">
+                     <div id="pic1" class="big-img">
+                        <img  src="Images/1.jpg" alt="">
+                     </div>
+                     <div id="pic2" class="big-img">
+                        <img  src="Images/2.jpg" alt="">
+                     </div>
+                     <div id="pic3" class="big-img">
+                        <img  src="Images/3.jpg" alt="">
+                     </div>
+                     <div id="pic4" class="big-img">
+                        <img src="Images/4.jpg" alt="">
+                     </div>
+                </div> 
+            </div>
+            <div class="Product-details">
+                <h1 id="product-name">Boy's 1/2 Zip Shep Shirt</h1>
+                <div class="ratings">
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rating-value"><a href="#reviews">8 Reviews</a></div>
+                </div>
+                <h2>Free Ground Shipping <span>on all orders over $125</span> </h2>
+                <div class="product-color">
+                    <p>Color: <span id="color-holder">select color</span></p>
+                </div>
+                <div class="price-tags">
+                    <div class="main-price-tag">
+                        <h2 class="price-tag">$60.92</h2>
+                        <div class="color-display cband-main" price="60.92" id="Silver" onmouseout="showSelectedColor()"  onmouseover="displayProductColorName(this)" 
+                        onclick="changeProductColor(this)"></div>
+                    </div>
+                    <div class="secondary-price-tag">
+                        <h2 class="price-tag">$34.92 </h2>
+                        <div class="color-bands" >
+                            <div class="color-display cband-sec1" price="34.92" id="Tide Blue" onmouseout="showSelectedColor()"  onmouseover="displayProductColorName(this)" onclick="changeProductColor(this)"></div>
+                            <div class="color-display cband-sec2" price="34.92" id="Deep Blue" onmouseout="showSelectedColor()"  onmouseover="displayProductColorName(this)" onclick="changeProductColor(this)"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-size">
+                    <p>Size: <span id="size-holder">select size</span> </p>
+                    <a href="#">Size Chart</a>
+                </div>
+                <div class="size-types" id="size-types">
+                    <div class="size-item" id="size-item1" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)" onclick="changeProductSize(this)">2T</div>
+                    <div class="size-item" id="size-item2" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)"  onclick="changeProductSize(this)">3T</div>
+                    <div class="size-item" id="size-item3"onmouseout="normalDisplay()"  onmouseover="displaySizeType(this)"  onclick="changeProductSize(this)">4T</div>
+                    <div class="size-item" id="size-item4" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)"  onclick="changeProductSize(this)">5</div>
+                    <div class="size-item" id="size-item5"onmouseout="normalDisplay()" onmouseover="displaySizeType(this)"  onclick="changeProductSize(this)">6</div>
+                    <div class="size-item" id="size-item6" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)"  onclick="changeProductSize(this)">7</div>
+                    <div class="size-item" id="size-item7" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)" onclick="changeProductSize(this)">S</div>
+                    <div class="size-item" id="size-item8" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)" onclick="changeProductSize(this)">M</div>
+                    <div class="size-item" id="size-item9" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)" onclick="changeProductSize(this)">L</div>
+                    <div class="size-item" id="size-item10" onmouseout="normalDisplay()" onmouseover="displaySizeType(this)" onclick="changeProductSize(this)">XL</div>
+                </div>
+                <div class="product-availability">
+                    <p>In stock</p>
+                </div>
+                <div class="product-quantity">
+                    <button id="reducebtn" onclick="ChangeQuantityValue(this)">-</button>
+                    <input id="quantity-holder" type="number" value="1">
+                    <button id="increasebtn" onclick="ChangeQuantityValue(this)">+</button>
+                </div>
+                <div class="purchase-section">
+                    <button id="addbtn" onclick="openNav()">ADD TO BAG</button>
+                    <button id="onlinebtn">
+                        <div>
+                            <p id="buy1">Buy online, free in-store pickup</p>
+                            <p id="buy2">Get it today at a store near you. <a href="#">Choose Store</a></p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="Details">
+        <div class="details-container">
+            <div class="description">
+                <p>THE DETAILS</p>
+                <P>STYLE <span id="product-style-product-page">3K001069</span></p>
+                <p>START EM' YOUNG! THERE'S NOTHING BETTER THAN A SHEP SHIRT, HE'LL LOVE 
+                    THE SOFT HANDFEEL OF THIS SLEEK CLASSIC .</p>
+            </div>
+            <div class="selection-desc">
+                <div class="desc-part">
+                    <P>FABRIC</P>
+                    <ul>
+                        <li>65% polyester, 35% cotton</li>
+                    </ul>
+                </div>
+                <div class="desc-part">
+                    <P>FEATURES</P>
+                    <ul>
+                        <li>Soft cotton performance 1/2-zip Shep Shirt</li>
+                        <li>Bonded interior performance cotton jersey mesh</li>
+                        <li>Performance polyester Shep shoulders</li>
+                        <li>Locker loop at interior back neck</li>
+                        <li>Logobox at the left chest</li>
+                        <li>Whale dot at exterior back neck</li>
+                        <li>Imported</li>
+                    </ul>
+                </div>
+                <div class="desc-part">
+                    <P>INSTRUCTIONS</P>
+                    <ul>
+                        <li>Machine wash</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="review-container">
+            <div class="review-comments">
+                <div class="ratings">
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rate"><img src="Images/r2.png" alt=""></div>
+                    <div class="rating-total">5.0</div>
+                </div>
+                <p>100% of respondents would recommend this to a friend</p>
+                <hr>
+                <div class="sorting-section">
+                    <div class="sort-select">
+                        <p>Sort reviews by:</p>
+                        <select name="" id="">
+                            <option value="">Highest Rated</option>
+                            <option value="">Most Recent</option>
+                            <option value="">Most Helpful</option>
+                            <option value="">Lowest Rated</option>
+                            <option value="">Oldest</option>
+                        </select>
+                        <button><a href="#">Write a Review</a> </button>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>Awesome</p>
+                    <span>Great quality and my son love it because is so confy.</span>
+                </div>
+                <div class="comment">
+                    <p>Best Sweatshirt for Teenage Boys!</p>
+                    <span>Perfect sweatshirt for my nephew's birthday coming up for the Fall. Boys love sweatshirts as 
+                        they can wear them anytime when the weather gets cool. They are versatile and the colors are perfect.</span>
+                    <!-- <hr> -->
+                </div>
+                <div class="comment">
+                    <p>Grandson</p>
+                    <span>Christmas gift for grandson</span>
+                </div>
+                <div class="comment">
+                    <p>Nice pullover</p>
+                    <span>Fits true to size. Not too lightweight and not too heavy. #sweepstakes</span>
+                </div>
+            </div>
+            <div class="extras">
+                <div class="_espart">
+                    <p>Shared on Social Media</p>
+                    <span>Share your #EDSFTG: <a href="#">Upload your photo</a> </span>
+                </div>
+                <div class="_espart">
+                    <span>FREE GROUND SHIPPING! </span>
+                    <p>Available on all orders over $125</p>
+                </div>
+                <div class="_espart">
+                    <span>EASY RETURNS & EXCHANGES</span>
+                    <p>We offer free returns and exchanges online or in our retail stores</p>
+                </div>
+                <div class="_espart">
+                    <span>QUSETIONS? DROP US A LINE.</span>
+                    <p>Call 1-800-892-4982 or  <a href="#">Send Us An Email</a> </p>
+                </div>
+                <div class="_espart">
+                    <span>Mon - Fri 9am - 6pm ET</span>
+                    <br>
+                    <span>Sat 9-5:30pm ET</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="product-added-pane cover" id="Coverpane"></div>
+    <div id="mySidepane" class="product-added-pane">
+        <div class="sidepanenav">Item added to Cart
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <div class="sidepane-main-body">
+            <div class="sidepane-content">
+                <img src="Images/1.jpg" alt="">
+                <div class="sidepane-items-details">
+                    <h2 id="sidepane-product-name"></h2>
+                    <p id="sidepanenav-color"></p>
+                    <p id="sidepanenav-size"></p>
+                    <p id="sidepanenav-price"></p>
+                    <p id="sidepanenav-quantity"></p>
+                </div>
+            </div>
+            <div class="sidepanenav-subtotal">
+                <p>Subtotal:</p>
+                <p id="Total-price"></p>
+            </div>
+            <div id="color-bar"></div>
+            <div class="free-ground-shipping">
+                <p id="free-ground-status"></p>
+            </div>
+            <div class="page-buttons">
+                <button id="checkoutbtn" onclick="navigateToBag()">CHECKOUT</button>
+                <button id="continuebtn" onclick="closeNav()">CONTINUE SHOPPING</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

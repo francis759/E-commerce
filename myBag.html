@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Bag</title>
+</head>
+<body onload="getDetails()">
+    <div class="mybag-main-body">
+        <div class="main-content">
+            <div class="header">
+                <div class="title1">
+                    <h1>My Bag</h1>
+                    <div class="numberOfItems">1</div>
+                </div>
+                <div class="title2">
+                    <div id="freegroundshipping"></div>
+                    <p id="freeshipping-status">You qualify for FREE SHIPPING!</p>
+                    <p> In-store pickup <span>is</span> Always free </p>
+                </div>
+            </div>
+            <div class="cart-items-overview">
+                <img src="data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 31 27.7' style='enable-background:new 0 0 31 27.7;' xml:space='preserve'%3e%3cg%3e%3cpath style='fill:%234B851D;' d='M7,13.5H4c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h3c0.3,0,0.5,0.2,0.5,0.5S7.2,13.5,7,13.5z'/%3e%3c/g%3e%3cg%3e%3cpath style='fill:%234B851D;' d='M6,24.4H3c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h3c0.3,0,0.5,0.2,0.5,0.5S6.2,24.4,6,24.4z'/%3e%3c/g%3e%3cg%3e%3cpath style='fill:%234B851D;' d='M5.1,18.7H0.5c-0.3,0-0.5-0.2-0.5-0.5s0.3-0.5,0.5-0.5h4.6c0.3,0,0.5,0.2,0.5,0.5S5.4,18.7,5.1,18.7 z'/%3e%3c/g%3e%3cg%3e%3cpath style='fill:%234B851D;' d='M20.6,8.3l0.8,3.5c0,0.1,0,0.3-0.1,0.4s-0.2,0.2-0.3,0.2l-3.7,0.8h-0.1c-0.2,0-0.4-0.2-0.5-0.4 l-0.8-3.5L12,10.2l2.3,10.1c0.8,0.3,1.4,0.9,1.8,1.6l10.7-2.4l-2.7-12L20.6,8.3z M25.5,18.1c0.1,0.3-0.1,0.5-0.4,0.6L23,19.2h-0.1 c-0.2,0-0.4-0.2-0.5-0.4c-0.1-0.3,0.1-0.5,0.4-0.6l2.1-0.5C25.2,17.6,25.5,17.8,25.5,18.1z'/%3e%3crect x='17.2' y='8.9' transform='matrix(0.975 -0.2221 0.2221 0.975 -1.8457 4.3918)' style='fill:%234B851D;' width='2.8' height='3'/%3e%3cpath style='fill:%234B851D;' d='M31,19.1c-0.1-0.3-0.4-0.5-0.7-0.4l-2.5,0.6L25,6.7c0-0.1-0.1-0.3-0.3-0.4c-0.1-0.1-0.3-0.1-0.4-0.1 L11.6,9.1l-1.9-8C9.6,0.9,9.4,0.7,9.2,0.7L3.5,0C3.2,0,2.9,0.2,2.9,0.5s0.2,0.6,0.5,0.6l5.4,0.6L13.1,20c-0.4,0-0.7,0-1.1,0.1 c-2.1,0.5-3.4,2.5-2.9,4.6s2.5,3.4,4.6,2.9s3.4-2.5,2.9-4.6l11-2.5c0.1,0,0.1,0,0.1-0.1l2.9-0.7C30.9,19.8,31.1,19.5,31,19.1z M19.7,8.6l0.7,2.9l-2.7,0.6L17,9.2L19.7,8.6z M13.3,25.8c-0.1,0-0.3,0-0.4,0c-0.9,0-1.7-0.6-1.9-1.5c-0.1-0.5,0-1,0.3-1.5 c0.3-0.4,0.7-0.7,1.2-0.9c0.1,0,0.3,0,0.4,0c0.9,0,1.7,0.6,1.9,1.5C15,24.5,14.3,25.6,13.3,25.8z M16.1,22 c-0.4-0.7-1.1-1.3-1.8-1.6L12,10.3l3.9-0.9l0.8,3.5c0.1,0.2,0.3,0.4,0.5,0.4h0.1l3.7-0.8c0.1,0,0.2-0.1,0.3-0.2s0.1-0.2,0.1-0.4 l-0.8-3.5L24,7.6l2.7,12L16.1,22z'/%3e%3cpath style='fill:%234B851D;' d='M22.5,18.8c0.1,0.2,0.3,0.4,0.5,0.4h0.1l2.1-0.5c0.3-0.1,0.4-0.3,0.4-0.6c-0.1-0.3-0.3-0.4-0.6-0.4 l-2.1,0.5C22.6,18.3,22.4,18.5,22.5,18.8z'/%3e%3cpath style='fill:%234B851D;' d='M12.8,22.6c-0.1,0-0.2,0-0.3,0c-0.7,0.2-1.1,0.8-1,1.5c0.1,0.6,0.7,1,1.2,1c0.1,0,0.2,0,0.3,0 c0.7-0.2,1.1-0.8,1-1.5C13.9,23,13.4,22.6,12.8,22.6z'/%3e%3c/g%3e%3c/svg%3e" alt="">
+                <strong>NEW! SAME DAY DELIVERY!</strong>
+                -
+                <a href="#">Check availability</a>
+            </div>
+            <div class="my-bag-table">
+                <table id="item-table">
+                    <thead>
+                        <tr>
+                            <th>ITEM</th>
+                            <th>QUANTITY & UNIT PRICE</th>
+                            <th>DELIVERY/PICKUP <span><a href="">&#9432;</a></span> </th>
+                            <th>TOTAL PRICE</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Don't see all your shopping bag items? Please <a href="">sign in.</a> </td>
+                        </tr>
+                    </tfoot>
+                    <tbody id="items-bag">
+                        <tr>
+                            <td id="product-summary-on-bag">
+                                <div class="mybag-item-decription">
+                                    <img src="Images/1.jpg" alt="">
+                                    <div class="mybag-item-decription-details">
+                                        <a id="mybag-product-name" href="#">Boy's 1/2 Zip Shep Shirt</a>
+                                        <ul>
+                                            <li><strong>Style:</strong> <span id="mybag-style-holder">1K001366</span> |</li>
+                                            <li><strong>Color:</strong> <span id="mybag-color-holder">Tide Blue</span> |</li> 
+                                            <li><strong>Size:</strong> <span id="mybag-size-holder"></span></li>
+                                        </ul>
+                                        <ul class="mybag-product-options">
+                                            <li><a href="#">Edit</a> |</li>
+                                            <li><a href="#">Move to WishList</a> |</li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td id="product-quantity-on-bag">
+                                <div class="product-quantity-on-bagcontent">
+                                    <input id="my-bag-productquantity" oninput="updatePrice()" min="1" max="10" type="number">
+                                    <div>
+                                        <p>UNIT PRICE</p>
+                                        <span>@ $<span id="my-bag-productunit-price"></span></span>
+                                    </div>
+                                </div>
+                                <div class="free-gift-package">
+                                    <input type="checkbox">
+                                    <label for="free gift package">Free gift package?</label>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <p>$<span id="mybag-Total-price-holder"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="purchase-box">
+            <div class="heading">
+                <div class="container">
+                    <p>Order Summary</p>
+                    <p id="purchase-numberofitems">1 Item</p>
+                </div>
+            </div>
+            <div class="purchase-body">
+                <div class="purchase-body-item">
+                    <p id="total-label">SubTotal</p>
+                    <p id="total-1">$<span id="sub-total"></span></p>
+                </div>
+                <div class="purchase-body-item">
+                    <p id="tax-label">Sales Tax</p>
+                    <p id="tax">$0.00</p>
+                </div>
+                <div class="purchase-body-item">
+                    <p id="E-totallbl">ESTIMATED TOTAL*</p>
+                    <p id="E-total-value">$<span id="E-total"></span></p>
+                </div>
+                <div class="afterpay">
+                    <p>Afterpay is available for orders between $ 35.00 - $ 1000.00  
+                        <img src="Images/afterpay-lockup.svg" alt="">?</p>
+                </div>
+                <div class="promo-container">
+                    <input type="text" placeholder="Enter promo code">
+                    <button>Apply</button>
+                </div>
+                <div class="checkout-container">
+                    <button>CHECKOUT</button>
+                </div>
+                <div class="option-pay">
+                    <span>Or pay with:</span>
+                </div>
+                <div class="option-btns">
+                    <a href="#" id="paypal">
+                        <img src="Images/paypal_logo.svg" alt="PayPal logo">
+                    </a> 
+                    <a href="#" id="paypalcredit">
+                        <img src="Images/ppc_logo.svg" alt="PayPal logo">
+                    </a> 
+                </div>
+                <div class="amazon-btn">
+                    <a href="#" >
+                        <img src="Images/ampay_logo_black.svg" alt="PayPal logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
