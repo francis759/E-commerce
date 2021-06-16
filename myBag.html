@@ -77,7 +77,53 @@
                                     <label for="free gift package">Free gift package?</label>
                                 </div>
                             </td>
-                            <td></td>
+                            <td>
+                                <div id="shippingtype-on-table">
+                                    <div class="shippingtype-container">
+                                        <div class="radio-holders">
+                                            <input type="radio" id="radio1" name="shippingType" onchange="displayOptions(this)" value="item1">
+                                            <label for="radio1">Ship To Me</label>
+                                        </div>
+                                        <div class="item item1" id="item1">
+                                            <p>Free Shipping!</p>
+                                        </div>
+                                        <div class="radio-holders">
+                                            <input type="radio" id="radio2" name="shippingType" onchange="displayOptions(this)" value="item2">
+                                            <label for="radio2">In-Store pickup</label>
+                                        </div>
+                                        <div class="item item2" id="item2">
+                                            <div class="location-select">
+                                                <p>Find store within</p>
+                                                <select name="location" id="loc-holder">
+                                                    <option value="10 miles">10 miles</option>
+                                                    <option value="20 miles">20 miles</option>
+                                                    <option value="30 miles">30 miles</option>
+                                                    <option value="40 miles">40 miles</option>
+                                                </select>
+                                            </div>
+                                            <p>ZIP CODE</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="radio-holders">
+                                            <input type="radio" id="radio3" name="shippingType" onchange="displayOptions(this)" value="item3">
+                                            <label for="radio3">Curbside pickup</label>
+                                        </div>
+                                        <div class="item item3" id="item3">
+                                            <div class="location-select">
+                                                <p>Find store within</p>
+                                                <select name="location" id="loc-holder">
+                                                    <option value="10 miles">10 miles</option>
+                                                    <option value="20 miles">20 miles</option>
+                                                    <option value="30 miles">30 miles</option>
+                                                    <option value="40 miles">40 miles</option>
+                                                </select>
+                                            </div>
+                                            <p>ZIP CODE</p>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                             <td>
                                 <p>$<span id="mybag-Total-price-holder"></span></p>
                             </td>

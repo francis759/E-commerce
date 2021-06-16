@@ -187,7 +187,6 @@ function navigateToBag(){
   location.href = "myBag.html";
 }
 function getDetails(){
-  
   document.getElementById("mybag-product-name").innerHTML = localStorage.getItem("productName");
   document.getElementById("mybag-style-holder").innerHTML = localStorage.getItem("productStyle");
   document.getElementById("mybag-color-holder").innerHTML = localStorage.getItem("productColor");
@@ -197,17 +196,20 @@ function getDetails(){
   document.getElementById("mybag-Total-price-holder").innerHTML = (localStorage.getItem("productPrice") * localStorage.getItem("productQuantity")).toFixed(2);
   document.getElementById("sub-total").innerHTML = (localStorage.getItem("productPrice") * localStorage.getItem("productQuantity")).toFixed(2);
   document.getElementById("E-total").innerHTML = (localStorage.getItem("productPrice") * localStorage.getItem("productQuantity")).toFixed(2);
+
   
 
   let quantity = document.getElementById("my-bag-productquantity").value
 
   let totalprice = (quantity * parseFloat(localStorage.getItem("productPrice"))).toFixed(2);
   if(totalprice > 125){
+    document.getElementById("item1").style.display = "block" ;
     document.getElementById("freegroundshipping").style.background = "green" ;
     document.getElementById("freeshipping-status").innerHTML = "You qualify for FREE GROUND SHIPPING!" ;
   }
   else{
     amountPercentage = Math.round(totalprice/125 *100);
+    document.getElementById("item1").style.display = "none" ;
     document.getElementById("freegroundshipping").style.background = "linear-gradient(to right, red "+ amountPercentage +"%, #CCC 50%)" ;
     document.getElementById("freeshipping-status").innerHTML = "You don't qualify for FREE GROUND SHIPPING!" ;
   }
@@ -239,5 +241,26 @@ function updatePrice(){
    document.getElementById("mybag-Total-price-holder").innerHTML = (localStorage.getItem("productPrice") * localStorage.getItem("productQuantity")).toFixed(2);
    document.getElementById("sub-total").innerHTML = (localStorage.getItem("productPrice") * localStorage.getItem("productQuantity")).toFixed(2);
    document.getElementById("E-total").innerHTML = (localStorage.getItem("productPrice") * localStorage.getItem("productQuantity")).toFixed(2);
+}
+function displayOptions(sender){
+  let quantity = document.getElementById("my-bag-productquantity").value
+ 
+  let totalprice = (quantity * parseFloat(localStorage.getItem("productPrice"))).toFixed(2);
+  let childDivs = document.getElementsByClassName("item");
+   for(i=0; i<childDivs.length ; i++){
+     if(childDivs[i].id == sender.value){
+        if(childDivs[i].id !== "item1"){
+          childDivs[i].style.display="block";
+        }
+        else{
+          if(totalprice > 125){
+            childDivs[i].style.display="block";
+          }
+        }
+     }
+     else{
+      childDivs[i].style.display="none";
+     }
+   }
 }
 
