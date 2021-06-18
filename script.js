@@ -32,8 +32,9 @@ function openNav() {
       }
       else{
         amountPercentage = Math.round(totalprice/125 *100);
+        let amountLeft = (125 - totalprice).toFixed(2);
         document.getElementById("color-bar").style.background = "linear-gradient(to right, red "+ amountPercentage +"%, #CCC 50%)" ;
-        document.getElementById("free-ground-status").innerHTML = "You don't qualify for FREE GROUND SHIPPING!" ;
+        document.getElementById("free-ground-status").innerHTML = "Add $"+ amountLeft + " to qualify for FREE GROUND SHIPPING!" ;
       }
     }
     else{
@@ -213,9 +214,10 @@ function getDetails(){
   }
   else{
     amountPercentage = Math.round(totalprice/125 *100);
+    let amountLeft = (125 - totalprice).toFixed(2);
     document.getElementById("item1").style.display = "none" ;
     document.getElementById("freegroundshipping").style.background = "linear-gradient(to right, red "+ amountPercentage +"%, #CCC 50%)" ;
-    document.getElementById("freeshipping-status").innerHTML = "You don't qualify for FREE GROUND SHIPPING!" ;
+    document.getElementById("freeshipping-status").innerHTML = "Add $"+amountLeft+" qualify for FREE GROUND SHIPPING!" ;
   }
 }
 
@@ -238,8 +240,9 @@ function updatePrice(){
    }
    else{
      amountPercentage = Math.round(totalprice/125 *100);
+     let amountLeft = (125 - totalprice).toFixed(2);
      document.getElementById("freegroundshipping").style.background = "linear-gradient(to right, red "+ amountPercentage +"%, #CCC 50%)" ;
-     document.getElementById("freeshipping-status").innerHTML = "You don't qualify for FREE GROUND SHIPPING!" ;
+     document.getElementById("freeshipping-status").innerHTML = "Add $" + amountLeft+ " to qualify for FREE GROUND SHIPPING!" ;
    }
    document.getElementById("E-total").innerHTML = localStorage.getItem("productPrice") * localStorage.getItem("productQuantity");
    document.getElementById("mybag-Total-price-holder").innerHTML = (localStorage.getItem("productPrice") * localStorage.getItem("productQuantity")).toFixed(2);
