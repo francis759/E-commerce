@@ -79,7 +79,7 @@ function navigateToPicture(sender){
   for( i=0; i< childDivs.length; i++ )
   {
      if(childDivs[i].id === sender.id){
-       childDivs[i].style.border = "2px solid #76a1d3"
+       childDivs[i].style.border = "2px solid #002b5c"
      }
      else{
       childDivs[i].style.border="none";
