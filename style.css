@@ -11,27 +11,9 @@ html{
 .main-body, .mybag-main-body{
     margin: auto 120px;
 }
-.nav-pane{
-   display:flex;
-   align-items: center;
-}
-.nav-pane ul{
-    list-style: none;
-    display: flex;
-    margin: 10px 0px;
-}
-.nav-pane ul li{
-    font-size: 0.8em;
-    color: #002b5c;
-    font-weight: 200;
-}
-.nav-pane ul li a{
-    padding:0 .5em;
-}
-.nav-pane ul li a :hover{
-    text-decoration: underline;
-}
+
 .product-body{
+    margin-top: 10px;
     display: flex;
     align-items: flex-start;
 }
@@ -44,6 +26,7 @@ html{
     border: 2px solid #CCC;
 }
 #initial{
+    border:2px solid #002b5c;
     margin-top: 0;
 }
 .images-holder ul li img{
@@ -56,27 +39,21 @@ html{
 .product-img{
     margin: 0px 30px;
     position: relative;
-    overflow:auto;
     width: 50%;
     background-color: #f7f7f7;
     height: 100%;
 }
 .product-img img{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 .slider-one{
-    display: flex;
-    overflow: auto;
+    padding:4px;
     width: 100%;
     height: 100%;
 }
-.big-img{
+.slider-one img{
     width: 100%;
-    height: 100%;
-} 
-.big-img img{
-    width: 450px;
     height: 100%;
 }
 .Product-details h1{

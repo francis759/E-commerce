@@ -10,38 +10,20 @@
 </head>
 <body>
     <div class="main-body">
-        <div class="nav-pane">
-            <ul>
-                <li class="page-item"><a href="#">Home</a>&gt;</li>
-                <li class="page-item"><a href="#">Boys</a>&gt;</li>
-                <li class="page-item"><a href="#">Clothing</a>&gt;</li>
-                <li class="page-item"><a href="#">SweatShirts & Sweaters</a>&gt;</li>
-            </ul>
-        </div>
+        
         <div class="product-body">
             <div class="images-holder">
                 <ul>
-                    <li id="initial" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic1"><img src="Images/1.jpg" alt=""></a></li>
-                    <li id="second" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic2"><img src="Images/2.jpg" alt=""></a></li>
-                    <li id="third" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic3"><img src="Images/3.jpg" alt=""></a></li>
-                    <li id="fourth"class="img-icons" onclick="navigateToPicture(this)"><a href="#pic4"><img src="Images/4.jpg" alt=""></a></li>
+                    <li id="initial" pic-value ="large1.jpg" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic1"><img src="Images/1.jpg" alt=""></a></li>
+                    <li id="second" pic-value="large2.jpg" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic2"><img src="Images/2.jpg" alt=""></a></li>
+                    <li id="third" pic-value="large3.jpg" class="img-icons" onclick="navigateToPicture(this)"><a href="#pic3"><img src="Images/3.jpg" alt=""></a></li>
+                    <li id="fourth" pic-value="large4.jpg"class="img-icons" onclick="navigateToPicture(this)"><a href="#pic4"><img src="Images/4.jpg" alt=""></a></li>
                 </ul>
             </div>
             <div class="product-img">
-                <img src="Images/1.jpg" alt="">
+                <img id="small-picture" src="Images/1.jpg" alt="">
                  <div class="slider-one">
-                     <div id="pic1" class="big-img">
-                        <img  src="Images/1.jpg" alt="">
-                     </div>
-                     <div id="pic2" class="big-img">
-                        <img  src="Images/2.jpg" alt="">
-                     </div>
-                     <div id="pic3" class="big-img">
-                        <img  src="Images/3.jpg" alt="">
-                     </div>
-                     <div id="pic4" class="big-img">
-                        <img src="Images/4.jpg" alt="">
-                     </div>
+                    <img id="big-picture"  src="Images/large1.jpg" alt="">
                 </div> 
             </div>
             <div class="Product-details">

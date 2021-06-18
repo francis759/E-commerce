@@ -71,14 +71,18 @@ function openNav() {
     document.getElementById('quantity-holder').value = value;
 }
 function navigateToPicture(sender){
-  var childDivs = document.getElementById('img-icons').getElementsByTagName('li');
+  let pic =  sender.getAttribute("pic-value");
+  document.getElementById("big-picture").src = "Images/"+pic;
+  document.getElementById("small-picture").src = "Images/"+pic;
+  var childDivs = document.getElementsByClassName('img-icons');
+
   for( i=0; i< childDivs.length; i++ )
   {
      if(childDivs[i].id === sender.id){
-       childDivs[i].style.border = "2px solid #76a1d3";
+       childDivs[i].style.border = "2px solid #76a1d3"
      }
      else{
-      childDivs[i].style.background = "rgba(228, 226, 226, 0.5)";
+      childDivs[i].style.border="none";
      }
   }
 }
