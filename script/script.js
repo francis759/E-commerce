@@ -189,7 +189,7 @@ function changeProductColor(sender){
   }
 }
 function navigateToBag(){
-  location.href = "myBag.html";
+  location.href = "/pages/myBag.html";
 }
 function getDetails(){
   document.getElementById("mybag-product-name").innerHTML = localStorage.getItem("productName");
